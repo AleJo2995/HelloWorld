@@ -1,0 +1,27 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "Hello, World restful api",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleJo2995/HelloWorld.git"
+  },
+  "author": "Alejo2995",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AleJo2995/HelloWorld/issues"
+  },
+  "homepage": "https://github.com/AleJo2995/HelloWorld#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6"
+  }
+}
