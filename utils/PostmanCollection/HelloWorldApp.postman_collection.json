@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "cd75255e-0ac1-476c-8005-69bf2a1a4bea",
+		"_postman_id": "b3f10322-bdae-4790-aab2-b7215d10fefd",
 		"name": "HelloWorldApp",
 		"description": "Hello, World restful api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -21,12 +21,15 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:3000/items/createItem",
+					"raw": "http://40.119.31.135:8080/items/createItem",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"40",
+						"119",
+						"31",
+						"135"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
 						"items",
 						"createItem"
@@ -41,12 +44,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/items/getAllItems",
+					"raw": "http://40.119.31.135:8080/items/getAllItems",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"40",
+						"119",
+						"31",
+						"135"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
 						"items",
 						"getAllItems"
@@ -61,16 +67,19 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/items/getSpecificItem/",
+					"raw": "http://40.119.31.135:8080/items/getSpecificItem/5f977ee91252f800204c2342",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"40",
+						"119",
+						"31",
+						"135"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
 						"items",
 						"getSpecificItem",
-						""
+						"5f977ee91252f800204c2342"
 					]
 				}
 			},
@@ -82,16 +91,19 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:3000/items/deleteItem/",
+					"raw": "http://40.119.31.135:8080/items/deleteItem/5f977ee91252f800204c2342",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"40",
+						"119",
+						"31",
+						"135"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
 						"items",
 						"deleteItem",
-						""
+						"5f977ee91252f800204c2342"
 					]
 				}
 			},
@@ -102,17 +114,29 @@
 			"request": {
 				"method": "PATCH",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Apple Computer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:3000/items/updateItem/",
+					"raw": "http://40.119.31.135:8080/items/updateItem/5f9653409483826d6813b109",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"40",
+						"119",
+						"31",
+						"135"
 					],
-					"port": "3000",
+					"port": "8080",
 					"path": [
 						"items",
 						"updateItem",
-						""
+						"5f9653409483826d6813b109"
 					]
 				}
 			},
