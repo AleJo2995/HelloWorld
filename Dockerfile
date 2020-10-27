@@ -1,12 +1,15 @@
-FROM node:12
+FROM node:11
 
-WORKDIR /app
+# Create app directory
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
-COPY package*.json ./
-
+# Install app dependencies
+COPY package.json /usr/src/app/
 RUN npm install
 
-COPY . .
+# Bundle app source
+COPY . /usr/src/app
 
 ENV PORT=8080
 
